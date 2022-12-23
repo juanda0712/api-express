@@ -63,4 +63,8 @@ app.use((req, res) => {
   })
 })
 
-app.listen(3005)
+const PORT = process.env.PORT || 3030
+
+app.listen(PORT, () => {
+  console.log(`server started on port ${PORT}`)
+})
